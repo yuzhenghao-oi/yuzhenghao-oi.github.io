@@ -1,0 +1,491 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CCF 非专业软件能力认证入门级（CSP-J）模拟题（一） | HG丶言‘s Blog</title><meta name="keywords" content="信息学竞赛,CSP-J/S初赛"><meta name="author" content="HG丶言"><meta name="copyright" content="HG丶言"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="试卷PDF 答案一、单项选择题     1 2 3 4 5     B D C B D         6 7 8 9 10     C B B B B         11 12 13 14 15     C B C C B     二、阅读程序题     1 2 3 4 5 6     × √ √ √ D B         1 2 3 4 5 6     √ √ √ √ C D">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CCF 非专业软件能力认证入门级（CSP-J）模拟题（一）">
+<meta property="og:url" content="https://yuzhenghao.cn/%E6%A8%A1%E6%8B%9F%E9%A2%98%E4%B8%80/index.html">
+<meta property="og:site_name" content="HG丶言‘s Blog">
+<meta property="og:description" content="试卷PDF 答案一、单项选择题     1 2 3 4 5     B D C B D         6 7 8 9 10     C B B B B         11 12 13 14 15     C B C C B     二、阅读程序题     1 2 3 4 5 6     × √ √ √ D B         1 2 3 4 5 6     √ √ √ √ C D">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/007S8ZIlly1gjfpekbmbpj30or0fzdh1.jpg">
+<meta property="article:published_time" content="2020-10-02T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-10-06T08:41:55.416Z">
+<meta property="article:author" content="HG丶言">
+<meta property="article:tag" content="信息学竞赛">
+<meta property="article:tag" content="CSP-J&#x2F;S初赛">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tva1.sinaimg.cn/large/007S8ZIlly1gjfpekbmbpj30or0fzdh1.jpg"><link rel="shortcut icon" href="https://tva1.sinaimg.cn/large/008eGmZEly1gn5mqtqfzoj30n00n0gos.jpg"><link rel="canonical" href="https://yuzhenghao.cn/%E6%A8%A1%E6%8B%9F%E9%A2%98%E4%B8%80/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//pingjs.qq.com"/><link rel="preconnect" href="//zz.bdstatic.com"/><link rel="manifest" href="/img/pwa/manifest.json"/><meta name="msapplication-TileColor" content="#fff"/><link rel="apple-touch-icon" sizes="180x180" href="/img/pwa/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/img/pwa/32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/img/pwa/16.png"/><link rel="mask-icon" href="/img/pwa/safari-pinned-tab.svg" color="#5bbad5"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?25676867f3de763391b6cfff141f984e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>var _mtac = {};
+(function() {
+    var mta = document.createElement("script");
+    mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
+    mta.setAttribute("name", "MTAH5");
+    mta.setAttribute("sid", "faed8fff8252d3247268a3b38eb627c2");
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(mta, s);
+})();
+</script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}
+
+// https://stackoverflow.com/questions/16839698/jquery-getscript-alternative-in-native-javascript
+const getScript = url => new Promise((resolve, reject) => {
+  const script = document.createElement('script')
+  script.src = url
+  script.async = true
+  script.onerror = reject
+  script.onload = script.onreadystatechange = function() {
+    const loadState = this.readyState
+    if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+    script.onload = script.onreadystatechange = null
+    resolve()
+  }
+  document.head.appendChild(script)
+})</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2020-10-06 16:41:55'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+   if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+  const autoChangeMode = '2'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }const asideStatus = saveToLocal.get('aside-status')
+if (asideStatus !== undefined) {
+   if (asideStatus === 'hide') {
+     document.documentElement.classList.add('hide-aside')
+   } else {
+     document.documentElement.classList.remove('hide-aside')
+   }
+}const fontSizeVal = saveToLocal.get('global-font-size')
+if (fontSizeVal !== undefined) {
+  document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+}})()</script><link rel="stylesheet" href="//at.alicdn.com/t/font_2078700_l9dmjgu8u3p.css"><link rel="stylesheet" href="//at.alicdn.com/t/font_2078700_7ieas7td637.css"><link rel="stylesheet" href="//at.alicdn.com/t/font_2078700_i4ykqvf6y1a.css"><style type="text/css">.app-refresh{position:fixed;top:-2.2rem;left:0;right:0;z-index:99999;padding:0 1rem;font-size:15px;height:2.2rem;transition:all .3s ease}.app-refresh-wrap{display:flex;color:#fff;height:100%;align-items:center;justify-content:center}.app-refresh-wrap a{color:#fff;text-decoration:underline;cursor:pointer}</style><meta name="generator" content="Hexo 5.1.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://tva1.sinaimg.cn/large/008eGmZEly1gn5mqtqfzoj30n00n0gos.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">49</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/changelog/"><i class="fa-fw iconfont icon-icon_alarmclock"></i><span> 更新日志</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://tva1.sinaimg.cn/large/007S8ZIlly1gjfpekbmbpj30or0fzdh1.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">HG丶言‘s Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/changelog/"><i class="fa-fw iconfont icon-icon_alarmclock"></i><span> 更新日志</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">CCF 非专业软件能力认证入门级（CSP-J）模拟题（一）</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-10-02T16:00:00.000Z" title="发表于 2020-10-03 00:00:00">2020-10-03</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-10-06T08:41:55.416Z" title="更新于 2020-10-06 16:41:55">2020-10-06</time></span></div><div class="meta-secondline"></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="试卷"><a href="#试卷" class="headerlink" title="试卷"></a>试卷</h2><p><a href="http://yuzhenghao.cn/file/模拟测试卷（一）.pdf">PDF</a></p>
+<h2 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h2><p>一、单项选择题</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">1</th>
+<th style="text-align:center">2</th>
+<th style="text-align:center">3</th>
+<th style="text-align:center">4</th>
+<th style="text-align:center">5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">B</td>
+<td style="text-align:center">D</td>
+<td style="text-align:center">C</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">D</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">6</th>
+<th style="text-align:center">7</th>
+<th style="text-align:center">8</th>
+<th style="text-align:center">9</th>
+<th style="text-align:center">10</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">C</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">B</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">11</th>
+<th style="text-align:center">12</th>
+<th style="text-align:center">13</th>
+<th style="text-align:center">14</th>
+<th style="text-align:center">15</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">C</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">C</td>
+<td style="text-align:center">C</td>
+<td style="text-align:center">B</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>二、阅读程序题</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">1</th>
+<th style="text-align:center">2</th>
+<th style="text-align:center">3</th>
+<th style="text-align:center">4</th>
+<th style="text-align:center">5</th>
+<th style="text-align:center">6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">×</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">D</td>
+<td style="text-align:center">B</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">1</th>
+<th style="text-align:center">2</th>
+<th style="text-align:center">3</th>
+<th style="text-align:center">4</th>
+<th style="text-align:center">5</th>
+<th style="text-align:center">6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">√</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">C</td>
+<td style="text-align:center">D</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">1</th>
+<th style="text-align:center">2</th>
+<th style="text-align:center">3</th>
+<th style="text-align:center">4</th>
+<th style="text-align:center">5</th>
+<th style="text-align:center">6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">√</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">C</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">C</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>三、完善程序</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">1</th>
+<th style="text-align:center">2</th>
+<th style="text-align:center">3</th>
+<th style="text-align:center">4</th>
+<th style="text-align:center">5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">A</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">D</td>
+<td style="text-align:center">C</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">6</th>
+<th style="text-align:center">7</th>
+<th style="text-align:center">8</th>
+<th style="text-align:center">9</th>
+<th style="text-align:center">10</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">B</td>
+<td style="text-align:center">D</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">B</td>
+<td style="text-align:center">C</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">HG丶言</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://yuzhenghao.cn/%E6%A8%A1%E6%8B%9F%E9%A2%98%E4%B8%80/">https://yuzhenghao.cn/%E6%A8%A1%E6%8B%9F%E9%A2%98%E4%B8%80/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://yuzhenghao.cn" target="_blank">HG丶言‘s Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E7%AB%9E%E8%B5%9B/">信息学竞赛</a><a class="post-meta__tags" href="/tags/CSP-J-S%E5%88%9D%E8%B5%9B/">CSP-J/S初赛</a></div><div class="post_share"><div class="social-share" data-image="https://tva1.sinaimg.cn/large/007S8ZIlly1gjfpekbmbpj30or0fzdh1.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/%E6%A8%A1%E6%8B%9F%E9%A2%98%E4%BA%8C/"><img class="prev-cover" src="https://tva1.sinaimg.cn/large/007S8ZIlly1gjfpek6ac4j30oq0fzt9x.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">CCF 非专业软件能力认证入门级（CSP-J）模拟题（二）</div></div></a></div><div class="next-post pull-right"><a href="CSP-J:S复赛常见问题与策略/"><img class="next-cover" src="https://tva1.sinaimg.cn/large/007S8ZIlly1gj9yawtlmgj30vk0hcjso.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">CSP-J/S 复赛常见问题与策略</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/CSP-JS备考指南/" title="CSP-J/S 备考指南"><img class="cover" src="https://tva1.sinaimg.cn/large/007S8ZIlly1gj9zoz9k3bj30vv0fk3zf.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-10-01</div><div class="title">CSP-J/S 备考指南</div></div></a></div><div><a href="/CSP2020/" title="2020 CSP-J/S 第一轮试卷"><img class="cover" src="https://tva1.sinaimg.cn/large/007S8ZIlly1gjmy868pp1j30o50e40u3.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-10-12</div><div class="title">2020 CSP-J/S 第一轮试卷</div></div></a></div><div><a href="/模拟题三/" title="CCF 非专业软件能力认证入门级（CSP-J）模拟题（三）"><img class="cover" src="https://tva1.sinaimg.cn/large/007S8ZIlly1gjfpg4hgobj30or0fzaba.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-10-05</div><div class="title">CCF 非专业软件能力认证入门级（CSP-J）模拟题（三）</div></div></a></div><div><a href="/模拟题二/" title="CCF 非专业软件能力认证入门级（CSP-J）模拟题（二）"><img class="cover" src="https://tva1.sinaimg.cn/large/007S8ZIlly1gjfpek6ac4j30oq0fzt9x.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-10-04</div><div class="title">CCF 非专业软件能力认证入门级（CSP-J）模拟题（二）</div></div></a></div><div><a href="/洛谷模拟题/" title="CCF 非专业软件能力认证入门级（CSP-J）模拟题（洛谷版）"><img class="cover" src="https://tva1.sinaimg.cn/large/007S8ZIlly1gjhp4tkgo7j30or0fzmyh.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-10-08</div><div class="title">CCF 非专业软件能力认证入门级（CSP-J）模拟题（洛谷版）</div></div></a></div><div><a href="/CSP-JS-初赛考纲/" title="CSP-J/S 初赛考纲"><img class="cover" src="https://tva1.sinaimg.cn/large/007S8ZIlly1gj8zdclzphj30lz0c1wf8.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-09-30</div><div class="title">CSP-J/S 初赛考纲</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="https://tva1.sinaimg.cn/large/008eGmZEly1gn5mqtqfzoj30n00n0gos.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">HG丶言</div><div class="author-info__description">对过去抱有恒心，对未来抱有信心，此之谓自强不息</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">49</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/yuzhenghao-OIer"><i class="fab fa-github"></i><span>关注我</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/yuzhenghao-OIer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:2480907320@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2480907320&amp;site=qq&amp;menu=yes" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="https://www.weibo.com/7373923436" target="_blank" title="微博"><i class="iconfont icon-weibo"></i></a><a class="social-icon" href="https://jianshu.com/2b46d077554a" target="_blank" title="简书"><i class="iconfont icon-jianshu"></i></a><a class="social-icon" href="https://www.zhihu.com/people/qing-yan-zhu-yan" target="_blank" title="知乎"><i class="iconfont icon-zhihu"></i></a><a class="social-icon" href="https://www.facebook.com/虞正皓" target="_blank" title="Facebook"><i class="iconfont icon-lianshu"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">HG丶言的博客 v2.0</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AF%95%E5%8D%B7"><span class="toc-text">试卷</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AD%94%E6%A1%88"><span class="toc-text">答案</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/airpodsmax/" title="AirPods Max：高调奏响"><img src="https://tva1.sinaimg.cn/large/0081Kckwly1glgtrewkm7j313w0je7el.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="AirPods Max：高调奏响"/></a><div class="content"><a class="title" href="/airpodsmax/" title="AirPods Max：高调奏响">AirPods Max：高调奏响</a><time datetime="2020-12-07T16:00:00.000Z" title="发表于 2020-12-08 00:00:00">2020-12-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020%E5%B9%B4%E5%BA%A6%E9%A3%9E%E8%A1%8C%E6%8A%A5%E5%91%8A/" title="2020年度飞行报告"><img src="https://tva1.sinaimg.cn/large/0081Kckwly1gl7lsgula8j31al0u01kx.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2020年度飞行报告"/></a><div class="content"><a class="title" href="/2020%E5%B9%B4%E5%BA%A6%E9%A3%9E%E8%A1%8C%E6%8A%A5%E5%91%8A/" title="2020年度飞行报告">2020年度飞行报告</a><time datetime="2020-11-29T16:00:00.000Z" title="发表于 2020-11-30 00:00:00">2020-11-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/apple2020-3/" title="2020 Apple 发布会（三）"><img src="https://tva1.sinaimg.cn/large/0081Kckwly1gkcdjsbt6sj30o30bs7e4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2020 Apple 发布会（三）"/></a><div class="content"><a class="title" href="/apple2020-3/" title="2020 Apple 发布会（三）">2020 Apple 发布会（三）</a><time datetime="2020-11-10T16:00:00.000Z" title="发表于 2020-11-11 00:00:00">2020-11-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/CSP2020-2/" title="CSP-J/S 2020 复赛试卷"><img src="https://tva1.sinaimg.cn/large/0081Kckwly1gkgv9f4thej30of0ekmy6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CSP-J/S 2020 复赛试卷"/></a><div class="content"><a class="title" href="/CSP2020-2/" title="CSP-J/S 2020 复赛试卷">CSP-J/S 2020 复赛试卷</a><time datetime="2020-11-06T16:00:00.000Z" title="发表于 2020-11-07 00:00:00">2020-11-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/CSP2020/" title="2020 CSP-J/S 第一轮试卷"><img src="https://tva1.sinaimg.cn/large/007S8ZIlly1gjmy868pp1j30o50e40u3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2020 CSP-J/S 第一轮试卷"/></a><div class="content"><a class="title" href="/CSP2020/" title="2020 CSP-J/S 第一轮试卷">2020 CSP-J/S 第一轮试卷</a><time datetime="2020-10-11T16:00:00.000Z" title="发表于 2020-10-12 00:00:00">2020-10-12</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By HG丶言</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">welcome to my Blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    loader: {
+      source: {
+        '[tex]/amsCd': '[tex]/amscd'
+      }
+    },
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        addClass: [200,() => {
+          document.querySelectorAll('mjx-container:not([display=\'true\']').forEach( node => {
+            const target = node.parentNode
+            if (!target.classList.contains('has-jax')) {
+              target.classList.add('mathjax-overflow')
+            }
+          })
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css"><script>(() => {
+  document.querySelectorAll('#article-container span.katex-display').forEach(item => {
+    btf.wrap(item, 'div', '', 'katex-wrap')
+  })
+})()</script><script>if (document.getElementsByClassName('mermaid').length) {
+  if (window.mermaidJsLoad) mermaid.init()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(() => {
+      window.mermaidJsLoad = true
+      mermaid.initialize({
+        theme: 'default',
+      })
+      false && mermaid.init()
+    })
+  }
+}</script><script>function loadValine () {
+  function initValine () {
+    let initData = {
+      el: '#vcomment',
+      appId: 'fjBtn41e7DqnAwDfgUbORHcY-MdYXbMMI',
+      appKey: 'imMkb9i4ur5eBU2JY0arh9BR',
+      placeholder: '在这里写下评论（在昵称栏中写下QQ号再按Tab键可自动调用QQ头像、昵称、邮箱）',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: false,
+      serverURLs: 'https://fjbtn41e.api.lncldglobal.com',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: true,
+      path: window.location.pathname,
+      tagMeta: ["博主","小伙伴","访客","管理员"],
+      master: 'de4460cbea6ec3c23eedbabbe31f27e7',
+      friends: ["38708aa5825e02310f8bc6c26372df99","5d9a0a289253e734668b456781fd86cc","30c9644916bdd2d63b5711619f44d36d","2a589fbc45a75e927f8c7d375340b26f","cd3c11e4f0a7018224009278669e2b87","3e57668387bad7fae533c96ff1ae1d2e","0325ecf65e3d95d4bcef1554061fc308"],
+    }
+
+    if (true) { 
+      initData.requiredFields= ('nick,mail'.split(','))
+    }
+    
+    if (false) {
+      const otherData = false
+      initData = Object.assign(initData, otherData)
+    }
+    
+    const valine = new Valine(initData)
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><div class="app-refresh" id="app-refresh"> <div class="app-refresh-wrap"> <label>✨ 网站已更新最新版本 👉</label> <a href="javascript:void(0)" onclick="location.reload()">点击刷新</a> </div></div><script>function showNotification(){if(GLOBAL_CONFIG.Snackbar){var t="light"===document.documentElement.getAttribute("data-theme")?GLOBAL_CONFIG.Snackbar.bgLight:GLOBAL_CONFIG.Snackbar.bgDark,e=GLOBAL_CONFIG.Snackbar.position;Snackbar.show({text:"已更新最新版本",backgroundColor:t,duration:5e5,pos:e,actionText:"点击刷新",actionTextColor:"#fff",onActionClick:function(t){location.reload()}})}else{var o=`top: 0; background: ${"light"===document.documentElement.getAttribute("data-theme")?"#49b1f5":"#1f1f1f"};`;document.getElementById("app-refresh").style.cssText=o}}"serviceWorker"in navigator&&(navigator.serviceWorker.controller&&navigator.serviceWorker.addEventListener("controllerchange",function(){showNotification()}),window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")}));</script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script>(function(){
+  const bp = document.createElement('script');
+  const curProtocol = window.location.protocol.split(':')[0];
+  if (curProtocol === 'https') {
+    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+  bp.dataset.pjax = ''
+  const s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(bp, s);
+})()</script></div></body></html>

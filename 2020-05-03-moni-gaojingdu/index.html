@@ -1,0 +1,351 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>专题训练 ｜ 模拟与高精赛前指导 | HG丶言‘s Blog</title><meta name="keywords" content="算法"><meta name="author" content="HG丶言"><meta name="copyright" content="HG丶言"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="本文所有题目都在：https:&#x2F;&#x2F;www.luogu.com.cn&#x2F;training&#x2F;9473#problems所谓“建模”，就是把事物进行抽象，根据实际问题来建立对应的数学模型。“抽象”并不意味着晦涩难懂；相反，它提供了大量的便利。计算机很难直接去解决实际问题，但是如果把实际问题建模成数学问题，就会大大地方便计算机来“理解”和“解决”。 举个生活中常见的例子：我们拿到了某次数学考试的成绩单，现在">
+<meta property="og:type" content="article">
+<meta property="og:title" content="专题训练 ｜ 模拟与高精赛前指导">
+<meta property="og:url" content="https://yuzhenghao.cn/2020-05-03-moni-gaojingdu/index.html">
+<meta property="og:site_name" content="HG丶言‘s Blog">
+<meta property="og:description" content="本文所有题目都在：https:&#x2F;&#x2F;www.luogu.com.cn&#x2F;training&#x2F;9473#problems所谓“建模”，就是把事物进行抽象，根据实际问题来建立对应的数学模型。“抽象”并不意味着晦涩难懂；相反，它提供了大量的便利。计算机很难直接去解决实际问题，但是如果把实际问题建模成数学问题，就会大大地方便计算机来“理解”和“解决”。 举个生活中常见的例子：我们拿到了某次数学考试的成绩单，现在">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/007S8ZIlly1giwalj5izbj31900u0x6r.jpg">
+<meta property="article:published_time" content="2020-05-02T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-09-19T13:53:38.466Z">
+<meta property="article:author" content="HG丶言">
+<meta property="article:tag" content="算法">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tva1.sinaimg.cn/large/007S8ZIlly1giwalj5izbj31900u0x6r.jpg"><link rel="shortcut icon" href="https://tva1.sinaimg.cn/large/008eGmZEly1gn5mqtqfzoj30n00n0gos.jpg"><link rel="canonical" href="https://yuzhenghao.cn/2020-05-03-moni-gaojingdu/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//pingjs.qq.com"/><link rel="preconnect" href="//zz.bdstatic.com"/><link rel="manifest" href="/img/pwa/manifest.json"/><meta name="msapplication-TileColor" content="#fff"/><link rel="apple-touch-icon" sizes="180x180" href="/img/pwa/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/img/pwa/32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/img/pwa/16.png"/><link rel="mask-icon" href="/img/pwa/safari-pinned-tab.svg" color="#5bbad5"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?25676867f3de763391b6cfff141f984e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>var _mtac = {};
+(function() {
+    var mta = document.createElement("script");
+    mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
+    mta.setAttribute("name", "MTAH5");
+    mta.setAttribute("sid", "faed8fff8252d3247268a3b38eb627c2");
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(mta, s);
+})();
+</script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}
+
+// https://stackoverflow.com/questions/16839698/jquery-getscript-alternative-in-native-javascript
+const getScript = url => new Promise((resolve, reject) => {
+  const script = document.createElement('script')
+  script.src = url
+  script.async = true
+  script.onerror = reject
+  script.onload = script.onreadystatechange = function() {
+    const loadState = this.readyState
+    if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+    script.onload = script.onreadystatechange = null
+    resolve()
+  }
+  document.head.appendChild(script)
+})</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2020-09-19 21:53:38'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+   if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+  const autoChangeMode = '2'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }const asideStatus = saveToLocal.get('aside-status')
+if (asideStatus !== undefined) {
+   if (asideStatus === 'hide') {
+     document.documentElement.classList.add('hide-aside')
+   } else {
+     document.documentElement.classList.remove('hide-aside')
+   }
+}const fontSizeVal = saveToLocal.get('global-font-size')
+if (fontSizeVal !== undefined) {
+  document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+}})()</script><link rel="stylesheet" href="//at.alicdn.com/t/font_2078700_l9dmjgu8u3p.css"><link rel="stylesheet" href="//at.alicdn.com/t/font_2078700_7ieas7td637.css"><link rel="stylesheet" href="//at.alicdn.com/t/font_2078700_i4ykqvf6y1a.css"><style type="text/css">.app-refresh{position:fixed;top:-2.2rem;left:0;right:0;z-index:99999;padding:0 1rem;font-size:15px;height:2.2rem;transition:all .3s ease}.app-refresh-wrap{display:flex;color:#fff;height:100%;align-items:center;justify-content:center}.app-refresh-wrap a{color:#fff;text-decoration:underline;cursor:pointer}</style><meta name="generator" content="Hexo 5.1.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://tva1.sinaimg.cn/large/008eGmZEly1gn5mqtqfzoj30n00n0gos.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">49</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/changelog/"><i class="fa-fw iconfont icon-icon_alarmclock"></i><span> 更新日志</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://tva1.sinaimg.cn/large/007S8ZIlly1giwalj5izbj31900u0x6r.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">HG丶言‘s Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/changelog/"><i class="fa-fw iconfont icon-icon_alarmclock"></i><span> 更新日志</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">专题训练 ｜ 模拟与高精赛前指导</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-05-02T16:00:00.000Z" title="发表于 2020-05-03 00:00:00">2020-05-03</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-09-19T13:53:38.466Z" title="更新于 2020-09-19 21:53:38">2020-09-19</time></span></div><div class="meta-secondline"></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="本文所有题目都在：https-www-luogu-com-cn-training-9473-problems"><a href="#本文所有题目都在：https-www-luogu-com-cn-training-9473-problems" class="headerlink" title="本文所有题目都在：https://www.luogu.com.cn/training/9473#problems"></a>本文所有题目都在：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/training/9473#problems">https://www.luogu.com.cn/training/9473#problems</a></h3><p>所谓“建模”，就是把事物进行抽象，根据实际问题来建立对应的数学模型。“抽象”并不意味着晦涩难懂；相反，它提供了大量的便利。计算机很难直接去解决实际问题，但是如果把实际问题建模成数学问题，就会大大地方便计算机来“理解”和“解决”。</p>
+<p>举个生活中常见的例子：我们拿到了某次数学考试的成绩单，现在需要知道谁考得最好。当然不能把成绩单对着电脑晃一晃，然后问“谁考得最好？”。需要通过一种途径让计算机来理解这个问题。这个问题可以建模成：“给定数组<br><code>score[]</code>，问数组内元素的最大值”。这样建模后，就能很方便的写程序解决问题了。对于这个问题，采用之前讨论过的“擂台法”，就可以给出答案。</p>
+<p>如何把实际问题建模成数学问题，主要依靠我们的经验和直觉、当然还有你灵动的思维；而算法与数据结构，正是解决数学问题的两把利剑。从这一章开始会介绍一些程序设计竞赛中的一些常见套路算法，而下一部分会介绍基础的数据结构。如果已经认真学习完了第一部分，相信这一部分也不在话下。</p>
+<p>这一章是语言部分的延伸，会介绍一些竞赛中会出现的“模拟题目”——这里的“模拟”不是指模拟某场比赛的模拟题，而是指让程序完整的按照题目叙述的方式执行运行得到最终答案。同时也会介绍可以计算很大整数的高精度运算方法。这一章对思维与算法设计的要求不高，但是会考验编程的基本功是否扎实<br>。</p>
+<h2 id="什么是模拟"><a href="#什么是模拟" class="headerlink" title="什么是模拟"></a>什么是模拟</h2><p>模拟就是按照题意建模，题目让你干什么你就照着它干什么。</p>
+<p>模拟的思路非常简单，基本不需要思考。但模拟题有码量大，难调试等缺点，在考场写错也非常浪费时间。</p>
+<h2 id="讲一个例题：P1042-乒乓球（普及-）"><a href="#讲一个例题：P1042-乒乓球（普及-）" class="headerlink" title="讲一个例题：P1042 乒乓球（普及-）"></a>讲一个例题：P1042 乒乓球（普及-）</h2><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1042">https://www.luogu.com.cn/problem/P1042</a></p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>从题中我们得知它需要我们球11分制和21分制的比分结果，也就是华华对手或华华谁更快到达（11或21）分时，并且比分差的绝对值不小于2，就输出比分（立为一局），当然这里还有一个重要的点，就是最后一局比赛时，可能比分不会到11或21，我们直接搜索到E结尾，最后退出循环再输出一遍最后局结果即可</p>
+<h3 id="注意！"><a href="#注意！" class="headerlink" title="注意！"></a>注意！</h3><ol>
+<li>本题奇大无比的数据量</li>
+<li>最后的当前比分也许是0:0，一定要输出！！！</li>
+</ol>
+<h3 id="code"><a href="#code" class="headerlink" title="code"></a>code</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt; </span></span></span><br><span class="line"><span class="keyword">char</span> a[<span class="number">1000000</span>];     <span class="comment">//其实可以不保存，但是本人习惯</span></span><br><span class="line"><span class="keyword">int</span> w, l, x, n, g, t, m, i;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> p[<span class="number">10000</span>], q[<span class="number">10000</span>];</span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">&quot;%c&quot;</span>, &amp;a[t]) &amp;&amp; a[t]!=<span class="string">&#x27;E&#x27;</span>)&#123; <span class="comment">//读取数据，到‘E’结束</span></span><br><span class="line">        <span class="keyword">if</span>(a[t]==<span class="string">&#x27;W&#x27;</span>)&#123; </span><br><span class="line">            w++;   <span class="comment">//11分制</span></span><br><span class="line">            x++;   <span class="comment">//21分制</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(a[t]==<span class="string">&#x27;L&#x27;</span>)&#123; <span class="comment">//同上</span></span><br><span class="line">            l++;</span><br><span class="line">            n++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>((w&gt;<span class="number">10</span> &amp;&amp; w-l&gt;<span class="number">1</span>) || (l&gt;<span class="number">10</span> &amp;&amp; l-w&gt;<span class="number">1</span>))&#123;   <span class="comment">//W或L比赛者到达11时，并且比分差不小于2，立为一局，保存一局比分</span></span><br><span class="line">            q[m++]=w;</span><br><span class="line">            q[m++]=l;</span><br><span class="line">            w=<span class="number">0</span>;</span><br><span class="line">            l=<span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>((x&gt;<span class="number">20</span> &amp;&amp; x-n&gt;<span class="number">1</span>) || (n&gt;<span class="number">20</span> &amp;&amp; n-x&gt;<span class="number">1</span>))&#123;   <span class="comment">//W或L比赛者到达21时，并且比分差不小于2，立为一局，保存一局比分</span></span><br><span class="line">            p[g++]=x;</span><br><span class="line">            p[g++]=n;</span><br><span class="line">            x=<span class="number">0</span>;</span><br><span class="line">            n=<span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        t++;    </span><br><span class="line">    &#125;</span><br><span class="line">    p[g++]=x;   <span class="comment">// 当前比分</span></span><br><span class="line">    p[g++]=n;</span><br><span class="line">    q[m++]=w;</span><br><span class="line">    q[m++]=l;   </span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;m;i+=<span class="number">2</span>)&#123;  <span class="comment">//输出11分制下比分</span></span><br><span class="line">        <span class="keyword">if</span>(i==<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;%d:%d&quot;</span>, q[i], q[i+<span class="number">1</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="built_in">printf</span>(<span class="string">&quot;\n%d:%d&quot;</span>, q[i], q[i+<span class="number">1</span>]);       </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;g;i+=<span class="number">2</span>)   <span class="comment">//输出21分制下比分</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;\n%d:%d&quot;</span>, p[i], p[i+<span class="number">1</span>]);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="高精度：背他！"><a href="#高精度：背他！" class="headerlink" title="高精度：背他！"></a>高精度：背他！</h2><p>1.概念</p>
+<p>高精度运算,是指参与运算的数(加数,减数,因子……）范围大大超出了标准数据类型（整型，实型）能表示的范围的运算。例如，求两个200位的数的和。这时，就要用到高精度算法了</p>
+<p>高精度使用数组来存储整数，模拟手算进行四则运算</p>
+<p>2.高精度运算涉及到的问题</p>
+<p>（1） 数据的输入</p>
+<p>（2） 数据的存储</p>
+<p>（3）数据的运算：进位和借位</p>
+<p>（4）结果的输出：小数点的位置和处于多余的0 </p>
+<p>3.高精度加法</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">char</span> a1[<span class="number">100</span>],b1[<span class="number">100</span>];</span><br><span class="line">	<span class="keyword">int</span> a[<span class="number">100</span>],b[<span class="number">100</span>],c[<span class="number">100</span>];</span><br><span class="line">	<span class="keyword">int</span> lena,lenb,lenc,i,x; 注意x是Int型</span><br><span class="line">	<span class="built_in">memset</span>(a,<span class="number">0</span>,<span class="keyword">sizeof</span>(a)); </span><br><span class="line">	<span class="built_in">memset</span>(b,<span class="number">0</span>,<span class="keyword">sizeof</span>(b));</span><br><span class="line">	 <span class="built_in">memset</span>(c,<span class="number">0</span>,<span class="keyword">sizeof</span>(c));</span><br><span class="line">	 gets(a1); </span><br><span class="line">	 gets(b1); <span class="comment">//输入加数与被加数 </span></span><br><span class="line">	 lena=<span class="built_in">strlen</span>(a1); </span><br><span class="line">	 lenb=<span class="built_in">strlen</span>(b1); </span><br><span class="line">	 <span class="keyword">for</span> (i=<span class="number">0</span>;i&lt;=lena<span class="number">-1</span>;i++)</span><br><span class="line">	    a[lena-i]=a1[i]<span class="number">-48</span>; <span class="comment">//加数放入a数组 　 </span></span><br><span class="line">	 <span class="keyword">for</span> (i=<span class="number">0</span>;i&lt;=lenb<span class="number">-1</span>;i++) </span><br><span class="line">	    b[lenb-i]=b1[i]<span class="number">-48</span>; <span class="comment">//加数放入b数组 </span></span><br><span class="line">	 lenc =<span class="number">1</span>; x=<span class="number">0</span>; </span><br><span class="line">	 <span class="keyword">while</span> (lenc &lt;=lena||lenc &lt;=lenb) </span><br><span class="line">	 &#123; 　 </span><br><span class="line">	  c[lenc]=a[lenc]+b[lenc]+x; <span class="comment">//两数相加 　</span></span><br><span class="line">	  x=c[lenc]/<span class="number">10</span>; 　</span><br><span class="line">	  c[lenc]%=<span class="number">10</span>; </span><br><span class="line">	  lenc++; </span><br><span class="line">	&#125;</span><br><span class="line">    c[lenc]=x; </span><br><span class="line">	<span class="keyword">if</span> (c[lenc]==<span class="number">0</span>)<span class="comment">//此时最高位上的加法 例如9+3 = 12 要溢出一位 </span></span><br><span class="line">   		lenc--; <span class="comment">//处理最高进位 </span></span><br><span class="line">	<span class="keyword">for</span> (i=lenc;i&gt;=<span class="number">1</span>;i--)</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;c[i]; <span class="comment">//输出结果 cout&lt;&lt;endl;</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<p>4.高精度减法</p>
+<p>  和高精度加法相比，减法在差为负数时处理的细节更多一点：当被减数小于减数时，差为负数，差的绝对值是减数减去被减数；在程序实现上用一个变量来存储符号位，用另一个数组存差的绝对值。</p>
+<p>算法流程：</p>
+<ul>
+<li><p>读入被减数S1，S2（字符串）；</p>
+</li>
+<li><p>置符号位：判断被减数是否大于减数：大则将符号位置为空；小则将符号位置为“-”，交换减数与被减数；</p>
+</li>
+<li><p>被减数与减数处理成数值，放在数组中；</p>
+</li>
+<li><p>运算：</p>
+<ul>
+<li>取数；</li>
+<li>判断是否需要借位；</li>
+<li>减，将运算结果放到差数组相应位中；</li>
+<li>判断是否运算完成：是，转5；不是，转A；</li>
+</ul>
+</li>
+<li>打印结果：符号位，第1位，循环处理第2到最后一位；</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line">    </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">exch_str</span><span class="params">(<span class="keyword">char</span>*s1, <span class="keyword">char</span>*s2)</span><span class="comment">//当减数大于被减数 交换二者 eg:2 -3 减数为3 </span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">char</span> tmp[<span class="number">1001</span>];</span><br><span class="line">    <span class="built_in">strcpy</span>(tmp,s1);</span><br><span class="line">    <span class="built_in">strcpy</span>(s1,s2);</span><br><span class="line">    <span class="built_in">strcpy</span>(s2,tmp);</span><br><span class="line">&#125;</span><br><span class="line">    </span><br><span class="line"><span class="keyword">int</span> a1[<span class="number">1001</span>],b1[<span class="number">1001</span>],s[<span class="number">1001</span>]; </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">char</span> a[<span class="number">1001</span>], b[<span class="number">1001</span>];</span><br><span class="line">    <span class="keyword">int</span> sign=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">int</span> len_a, len_b, i, j, k=<span class="number">0</span>, t;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%s %s&quot;</span>, a, b);</span><br><span class="line">    len_a = <span class="built_in">strlen</span>(a);</span><br><span class="line">    len_b = <span class="built_in">strlen</span>(b);</span><br><span class="line">    <span class="keyword">if</span>(len_a &lt; len_b)</span><br><span class="line">    &#123;</span><br><span class="line">        sign = <span class="number">-1</span>;<span class="comment">//符号位置负</span></span><br><span class="line">        exch_str(a,b);<span class="comment">//交换被减数与减数</span></span><br><span class="line">        t = len_a;</span><br><span class="line">        len_a = len_b;</span><br><span class="line">        len_b = t;<span class="comment">//交换他们的长度</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(len_a == len_b)</span><br><span class="line">      <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; len_a; ++i)</span><br><span class="line">        <span class="keyword">if</span>(a[i] &gt; b[i])</span><br><span class="line">        &#123;</span><br><span class="line">          sign = <span class="number">1</span>;</span><br><span class="line">          <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(a[i] &lt; b[i])<span class="comment">//两者长度相同 差仍未负数 </span></span><br><span class="line">        &#123;</span><br><span class="line">          sign = <span class="number">-1</span>;</span><br><span class="line">          exch_str(a,b);</span><br><span class="line">          <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">          sign = <span class="number">1</span>;</span><br><span class="line">   <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; len_a; ++i)</span><br><span class="line">       a1[i] = a[i] - <span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">   <span class="keyword">for</span>(j = <span class="number">0</span>; j &lt; len_b; ++j)</span><br><span class="line">       b1[j] = b[j] - <span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">   <span class="keyword">while</span>(i&gt;=<span class="number">0</span> &amp;&amp; j&gt;=<span class="number">0</span>)</span><br><span class="line">      &#123;</span><br><span class="line">    s[k] = a1[i] - b1[j];<span class="comment">//s[0]=0,因为a1[len_a]和b1[len_b]为0</span></span><br><span class="line">    <span class="keyword">if</span>(s[k] &lt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">      a1[i<span class="number">-1</span>] -= <span class="number">1</span>;<span class="comment">//借位</span></span><br><span class="line">      s[k]+=<span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    k++;</span><br><span class="line">    i--;</span><br><span class="line">    j--;</span><br><span class="line">   &#125;</span><br><span class="line">    <span class="keyword">while</span>(i &gt;= <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">     s[k] = a1[i];</span><br><span class="line">     k++;</span><br><span class="line">     i--;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(sign&lt;<span class="number">0</span>)</span><br><span class="line">       <span class="built_in">printf</span>(<span class="string">&quot;-&quot;</span>);</span><br><span class="line">    <span class="keyword">while</span>(s[k]==<span class="number">0</span>&amp;&amp;k&gt;<span class="number">0</span>)</span><br><span class="line">      k--;</span><br><span class="line">    <span class="keyword">if</span>(k == <span class="number">0</span>)</span><br><span class="line">       <span class="built_in">printf</span>(<span class="string">&quot;0&quot;</span>);</span><br><span class="line">    <span class="keyword">while</span>(k &gt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>, s[k]);</span><br><span class="line">      k--;</span><br><span class="line">    &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>5.高精度乘法</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string.h&gt; </span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">char</span> n[<span class="number">255</span>],m[<span class="number">255</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n1[<span class="number">255</span>],m1[<span class="number">255</span>],s[<span class="number">510</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">int</span> i,j, k=<span class="number">0</span>, t, x=<span class="number">0</span>, dig;</span><br><span class="line">	<span class="keyword">int</span> lenn, lenm;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%s %s&quot;</span>, &amp;n, &amp;m);</span><br><span class="line">	lenn = <span class="built_in">strlen</span>(n);</span><br><span class="line">	lenm = <span class="built_in">strlen</span>(m);</span><br><span class="line">	<span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; lenn; i++)</span><br><span class="line">	   n1[i] = n[i] - <span class="number">48</span>;</span><br><span class="line">	<span class="keyword">for</span>(j = <span class="number">0</span>;j &lt; lenm; j++)</span><br><span class="line">	   m1[j] = m[j] - <span class="number">48</span>;</span><br><span class="line">	<span class="keyword">for</span>(j = lenm<span class="number">-1</span>; j&gt;=<span class="number">0</span>; j--)</span><br><span class="line">	&#123;</span><br><span class="line">		t=k;</span><br><span class="line">		<span class="keyword">for</span>(i = lenn<span class="number">-1</span>; i &gt;= <span class="number">0</span>; i--)</span><br><span class="line">		&#123;</span><br><span class="line">		  s[t]+=n1[i]*m1[j];</span><br><span class="line">		  t++;</span><br><span class="line">	    &#125;</span><br><span class="line">	    ++k;</span><br><span class="line">	    dig=t;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(i = <span class="number">0</span>;i &lt; dig; i++)</span><br><span class="line">	   <span class="keyword">while</span>(s[i] &gt;= <span class="number">10</span>)</span><br><span class="line">          &#123;</span><br><span class="line">	     s[i] -= <span class="number">10</span>;</span><br><span class="line">	     ++s[i+<span class="number">1</span>];</span><br><span class="line">	   &#125;</span><br><span class="line">   <span class="keyword">if</span>(s[dig] != <span class="number">0</span>)</span><br><span class="line">     <span class="keyword">for</span>(i=dig;i&gt;=<span class="number">0</span>;i--)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,s[i]);</span><br><span class="line">          <span class="keyword">else</span></span><br><span class="line">     <span class="keyword">for</span>(i=dig<span class="number">-1</span>;i&gt;=<span class="number">0</span>;i--)</span><br><span class="line">           <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,s[i]);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>6.高精度除法<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;  </span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;  </span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;  </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">  <span class="built_in">string</span> str1,str2;  </span><br><span class="line">  <span class="keyword">int</span> a[<span class="number">250</span>],b[<span class="number">250</span>],c[<span class="number">500</span>],len;    <span class="comment">//250位以内的两个数相乘  </span></span><br><span class="line">  <span class="keyword">int</span> i,j;  </span><br><span class="line">  <span class="built_in">memset</span>(a,<span class="number">0</span>,<span class="keyword">sizeof</span>(a));  </span><br><span class="line">  <span class="built_in">memset</span>(b,<span class="number">0</span>,<span class="keyword">sizeof</span>(b));  </span><br><span class="line">  <span class="built_in">cin</span>&gt;&gt;str1&gt;&gt;str2;  </span><br><span class="line">  a[<span class="number">0</span>]=str1.length();  </span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=a[<span class="number">0</span>];i++)  </span><br><span class="line">    a[i]=str1[a[<span class="number">0</span>]-i]-<span class="string">&#x27;0&#x27;</span>;  </span><br><span class="line">  b[<span class="number">0</span>]=str2.length();  </span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=b[<span class="number">0</span>];i++)  </span><br><span class="line">    b[i]=str2[b[<span class="number">0</span>]-i]-<span class="string">&#x27;0&#x27;</span>;  </span><br><span class="line">  <span class="built_in">memset</span>(c,<span class="number">0</span>,<span class="keyword">sizeof</span>(c));  </span><br><span class="line">  <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=a[<span class="number">0</span>];i++)   <span class="comment">//做按位乘法同时处理进位，注意循环内语句的写法。  </span></span><br><span class="line">    <span class="keyword">for</span>(j=<span class="number">1</span>;j&lt;=b[<span class="number">0</span>];j++)  </span><br><span class="line">    &#123;  </span><br><span class="line">    c[i+j<span class="number">-1</span>]+=a[i]*b[j];  </span><br><span class="line">    c[i+j]+=c[i+j<span class="number">-1</span>]/<span class="number">10</span>;  </span><br><span class="line">    c[i+j<span class="number">-1</span>]%=<span class="number">10</span>;     </span><br><span class="line">    &#125;  </span><br><span class="line">  len=a[<span class="number">0</span>]+b[<span class="number">0</span>]+<span class="number">1</span>;  <span class="comment">//去掉最高位的0，然后输出  </span></span><br><span class="line">  <span class="keyword">while</span>((c[len]==<span class="number">0</span>)&amp;&amp;(len&gt;<span class="number">1</span>)) len--;   <span class="comment">//为什么此处要len&gt;1??  </span></span><br><span class="line">  <span class="keyword">for</span>(i=len;i&gt;=<span class="number">1</span>;i--)  </span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;c[i];  </span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">HG丶言</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://yuzhenghao.cn/2020-05-03-moni-gaojingdu/">https://yuzhenghao.cn/2020-05-03-moni-gaojingdu/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://yuzhenghao.cn" target="_blank">HG丶言‘s Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%AE%97%E6%B3%95/">算法</a></div><div class="post_share"><div class="social-share" data-image="https://tva1.sinaimg.cn/large/007S8ZIlly1giwalj5izbj31900u0x6r.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2020-05-03-biyedianli/"><img class="prev-cover" src="https://tva1.sinaimg.cn/large/007S8ZIlly1giwalewwqcj31440u0qqo.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">毕业典礼演讲</div></div></a></div><div class="next-post pull-right"><a href="/2020-04-20-%E7%8A%B6%E5%8E%8Bdp/"><img class="next-cover" src="https://tva1.sinaimg.cn/large/007S8ZIlly1giwalh1j5kj31900u016n.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">状压dp及其经典题型</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2020-02-19-博弈论/" title="博弈论"><img class="cover" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-02-19</div><div class="title">博弈论</div></div></a></div><div><a href="/2020-02-20-深度优先搜索与广度优先搜索/" title="深度优先搜索与广度优先搜索"><img class="cover" src="https://tva1.sinaimg.cn/large/007S8ZIlly1giwalhav1dj31900u0tnd.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-02-20</div><div class="title">深度优先搜索与广度优先搜索</div></div></a></div><div><a href="/2020-04-12-diguitui/" title="专题训练 | 递归与递推赛前指导"><img class="cover" src="https://tva1.sinaimg.cn/large/007S8ZIlly1giwalj5izbj31900u0x6r.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-04-12</div><div class="title">专题训练 | 递归与递推赛前指导</div></div></a></div><div><a href="/2020-04-20-状压dp/" title="状压dp及其经典题型"><img class="cover" src="https://tva1.sinaimg.cn/large/007S8ZIlly1giwalh1j5kj31900u016n.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-04-20</div><div class="title">状压dp及其经典题型</div></div></a></div><div><a href="/2020-07-25-tu1/" title="图——最短路径问题"><img class="cover" src="https://tva1.sinaimg.cn/large/007S8ZIlly1giwalgqjkmj318y0u0wkx.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2020-07-25</div><div class="title">图——最短路径问题</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="https://tva1.sinaimg.cn/large/008eGmZEly1gn5mqtqfzoj30n00n0gos.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">HG丶言</div><div class="author-info__description">对过去抱有恒心，对未来抱有信心，此之谓自强不息</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">49</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/yuzhenghao-OIer"><i class="fab fa-github"></i><span>关注我</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/yuzhenghao-OIer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:2480907320@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2480907320&amp;site=qq&amp;menu=yes" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="https://www.weibo.com/7373923436" target="_blank" title="微博"><i class="iconfont icon-weibo"></i></a><a class="social-icon" href="https://jianshu.com/2b46d077554a" target="_blank" title="简书"><i class="iconfont icon-jianshu"></i></a><a class="social-icon" href="https://www.zhihu.com/people/qing-yan-zhu-yan" target="_blank" title="知乎"><i class="iconfont icon-zhihu"></i></a><a class="social-icon" href="https://www.facebook.com/虞正皓" target="_blank" title="Facebook"><i class="iconfont icon-lianshu"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">HG丶言的博客 v2.0</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%AC%E6%96%87%E6%89%80%E6%9C%89%E9%A2%98%E7%9B%AE%E9%83%BD%E5%9C%A8%EF%BC%9Ahttps-www-luogu-com-cn-training-9473-problems"><span class="toc-number">1.</span> <span class="toc-text">本文所有题目都在：https:&#x2F;&#x2F;www.luogu.com.cn&#x2F;training&#x2F;9473#problems</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%A8%A1%E6%8B%9F"><span class="toc-number"></span> <span class="toc-text">什么是模拟</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%B2%E4%B8%80%E4%B8%AA%E4%BE%8B%E9%A2%98%EF%BC%9AP1042-%E4%B9%92%E4%B9%93%E7%90%83%EF%BC%88%E6%99%AE%E5%8F%8A-%EF%BC%89"><span class="toc-number"></span> <span class="toc-text">讲一个例题：P1042 乒乓球（普及-）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF"><span class="toc-number">1.</span> <span class="toc-text">思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F%EF%BC%81"><span class="toc-number">2.</span> <span class="toc-text">注意！</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#code"><span class="toc-number">3.</span> <span class="toc-text">code</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%AB%98%E7%B2%BE%E5%BA%A6%EF%BC%9A%E8%83%8C%E4%BB%96%EF%BC%81"><span class="toc-number"></span> <span class="toc-text">高精度：背他！</span></a></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/airpodsmax/" title="AirPods Max：高调奏响"><img src="https://tva1.sinaimg.cn/large/0081Kckwly1glgtrewkm7j313w0je7el.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="AirPods Max：高调奏响"/></a><div class="content"><a class="title" href="/airpodsmax/" title="AirPods Max：高调奏响">AirPods Max：高调奏响</a><time datetime="2020-12-07T16:00:00.000Z" title="发表于 2020-12-08 00:00:00">2020-12-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020%E5%B9%B4%E5%BA%A6%E9%A3%9E%E8%A1%8C%E6%8A%A5%E5%91%8A/" title="2020年度飞行报告"><img src="https://tva1.sinaimg.cn/large/0081Kckwly1gl7lsgula8j31al0u01kx.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2020年度飞行报告"/></a><div class="content"><a class="title" href="/2020%E5%B9%B4%E5%BA%A6%E9%A3%9E%E8%A1%8C%E6%8A%A5%E5%91%8A/" title="2020年度飞行报告">2020年度飞行报告</a><time datetime="2020-11-29T16:00:00.000Z" title="发表于 2020-11-30 00:00:00">2020-11-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/apple2020-3/" title="2020 Apple 发布会（三）"><img src="https://tva1.sinaimg.cn/large/0081Kckwly1gkcdjsbt6sj30o30bs7e4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2020 Apple 发布会（三）"/></a><div class="content"><a class="title" href="/apple2020-3/" title="2020 Apple 发布会（三）">2020 Apple 发布会（三）</a><time datetime="2020-11-10T16:00:00.000Z" title="发表于 2020-11-11 00:00:00">2020-11-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/CSP2020-2/" title="CSP-J/S 2020 复赛试卷"><img src="https://tva1.sinaimg.cn/large/0081Kckwly1gkgv9f4thej30of0ekmy6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CSP-J/S 2020 复赛试卷"/></a><div class="content"><a class="title" href="/CSP2020-2/" title="CSP-J/S 2020 复赛试卷">CSP-J/S 2020 复赛试卷</a><time datetime="2020-11-06T16:00:00.000Z" title="发表于 2020-11-07 00:00:00">2020-11-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/CSP2020/" title="2020 CSP-J/S 第一轮试卷"><img src="https://tva1.sinaimg.cn/large/007S8ZIlly1gjmy868pp1j30o50e40u3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2020 CSP-J/S 第一轮试卷"/></a><div class="content"><a class="title" href="/CSP2020/" title="2020 CSP-J/S 第一轮试卷">2020 CSP-J/S 第一轮试卷</a><time datetime="2020-10-11T16:00:00.000Z" title="发表于 2020-10-12 00:00:00">2020-10-12</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By HG丶言</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">welcome to my Blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    loader: {
+      source: {
+        '[tex]/amsCd': '[tex]/amscd'
+      }
+    },
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        addClass: [200,() => {
+          document.querySelectorAll('mjx-container:not([display=\'true\']').forEach( node => {
+            const target = node.parentNode
+            if (!target.classList.contains('has-jax')) {
+              target.classList.add('mathjax-overflow')
+            }
+          })
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css"><script>(() => {
+  document.querySelectorAll('#article-container span.katex-display').forEach(item => {
+    btf.wrap(item, 'div', '', 'katex-wrap')
+  })
+})()</script><script>if (document.getElementsByClassName('mermaid').length) {
+  if (window.mermaidJsLoad) mermaid.init()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(() => {
+      window.mermaidJsLoad = true
+      mermaid.initialize({
+        theme: 'default',
+      })
+      false && mermaid.init()
+    })
+  }
+}</script><script>function loadValine () {
+  function initValine () {
+    let initData = {
+      el: '#vcomment',
+      appId: 'fjBtn41e7DqnAwDfgUbORHcY-MdYXbMMI',
+      appKey: 'imMkb9i4ur5eBU2JY0arh9BR',
+      placeholder: '在这里写下评论（在昵称栏中写下QQ号再按Tab键可自动调用QQ头像、昵称、邮箱）',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: false,
+      serverURLs: 'https://fjbtn41e.api.lncldglobal.com',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: true,
+      path: window.location.pathname,
+      tagMeta: ["博主","小伙伴","访客","管理员"],
+      master: 'de4460cbea6ec3c23eedbabbe31f27e7',
+      friends: ["38708aa5825e02310f8bc6c26372df99","5d9a0a289253e734668b456781fd86cc","30c9644916bdd2d63b5711619f44d36d","2a589fbc45a75e927f8c7d375340b26f","cd3c11e4f0a7018224009278669e2b87","3e57668387bad7fae533c96ff1ae1d2e","0325ecf65e3d95d4bcef1554061fc308"],
+    }
+
+    if (true) { 
+      initData.requiredFields= ('nick,mail'.split(','))
+    }
+    
+    if (false) {
+      const otherData = false
+      initData = Object.assign(initData, otherData)
+    }
+    
+    const valine = new Valine(initData)
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><div class="app-refresh" id="app-refresh"> <div class="app-refresh-wrap"> <label>✨ 网站已更新最新版本 👉</label> <a href="javascript:void(0)" onclick="location.reload()">点击刷新</a> </div></div><script>function showNotification(){if(GLOBAL_CONFIG.Snackbar){var t="light"===document.documentElement.getAttribute("data-theme")?GLOBAL_CONFIG.Snackbar.bgLight:GLOBAL_CONFIG.Snackbar.bgDark,e=GLOBAL_CONFIG.Snackbar.position;Snackbar.show({text:"已更新最新版本",backgroundColor:t,duration:5e5,pos:e,actionText:"点击刷新",actionTextColor:"#fff",onActionClick:function(t){location.reload()}})}else{var o=`top: 0; background: ${"light"===document.documentElement.getAttribute("data-theme")?"#49b1f5":"#1f1f1f"};`;document.getElementById("app-refresh").style.cssText=o}}"serviceWorker"in navigator&&(navigator.serviceWorker.controller&&navigator.serviceWorker.addEventListener("controllerchange",function(){showNotification()}),window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")}));</script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script>(function(){
+  const bp = document.createElement('script');
+  const curProtocol = window.location.protocol.split(':')[0];
+  if (curProtocol === 'https') {
+    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+  bp.dataset.pjax = ''
+  const s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(bp, s);
+})()</script></div></body></html>
